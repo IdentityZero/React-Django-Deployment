@@ -8,10 +8,13 @@ const Home = () => {
     { id: 3, username: "admin", last_login: "2025-03-01 08:45" },
   ]);
 
+  console.log(window.location.origin);
+
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://127.0.0.1:8000/users/");
+        const url = `${window.location.origin}/users/`;
+        const res = await axios.get(url);
         setUsers(res.data);
       } catch (error) {
         console.log(error);
