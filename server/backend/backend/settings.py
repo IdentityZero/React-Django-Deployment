@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-afera#vm=!!31+mp*nb_^v5&qj&1*oy)7#^f0&=gbpf%9c)x&p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
